@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<StackPane xmlns:fx="http://javafx.com/fxml" fx:controller="controller.GameController">
+    <Canvas fx:id="gameCanvas" width="400" height="400" />
+    <Label text="🐍" style="-fx-font-size: 36px; -fx-font-weight: bold; -fx-text-fill: #4CAF50;" StackPane.alignment="TOP_CENTER" />
+    <Label fx:id="infoLabel" styleClass="info-label" text="Tekan 1: Lambat, 2: Normal, 3: Cepat | P: Pause/Resume" StackPane.alignment="TOP_LEFT" />
+    <Label fx:id="fpsLabel" style="-fx-font-size: 14px; -fx-text-fill: #00e676; -fx-font-weight: bold; -fx-background-color: rgba(0,0,0,0.4); -fx-padding: 2 8 2 8; -fx-background-radius: 8;" StackPane.alignment="TOP_RIGHT" />
+    <VBox fx:id="overlay" alignment="CENTER" spacing="10" visible="false">
+        <Label fx:id="gameOverLabel" text="" style="-fx-font-size: 32px; -fx-font-weight: bold; -fx-text-fill: #e53935;" />
+        <Label fx:id="scoreLabel" style="-fx-text-fill: white; -fx-font-size: 20px;" />
+        <Button fx:id="backButton" text="🏠 Kembali ke Menu" />
+    </VBox>
+</StackPane>
